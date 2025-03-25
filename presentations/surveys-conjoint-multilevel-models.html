@@ -444,7 +444,7 @@
   <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="IS 5150/6110">
-  <title>quarto-input9d1ba000ab452be9</title>
+  <title>quarto-inputa60d038e51884833</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -1487,7 +1487,7 @@ B &amp; \sim MVN\left(\gamma, \Sigma \right) \\[2mm]
 </section>
 <section id="section-10" class="slide level2">
 <h2></h2>
-<div id="ac7977eb" class="cell" data-execution_count="1">
+<div id="9e25a809" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href></a><span class="im">import</span> polars <span class="im">as</span> pl</span>
 <span id="cb1-3"><a href></a><span class="im">import</span> pymc <span class="im">as</span> pm</span>
@@ -1522,7 +1522,7 @@ B &amp; \sim MVN\left(\gamma, \Sigma \right) \\[2mm]
 </section>
 <section id="section-11" class="slide level2">
 <h2></h2>
-<div id="de1665b4" class="cell" data-execution_count="2">
+<div id="a553d2b2" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href></a><span class="co"># Visualize marginal posteriors.</span></span>
 <span id="cb2-2"><a href></a>az.plot_forest(draws, var_names<span class="op">=</span>[<span class="st">&#39;beta&#39;</span>], combined <span class="op">=</span> <span class="va">True</span>, hdi_prob<span class="op">=</span><span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -1537,7 +1537,7 @@ B &amp; \sim MVN\left(\gamma, \Sigma \right) \\[2mm]
 </section>
 <section id="section-12" class="slide level2">
 <h2></h2>
-<div id="b6bc9692" class="cell" data-execution_count="3">
+<div id="fe7e1837" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb3-2"><a href></a><span class="im">import</span> polars <span class="im">as</span> pl</span>
 <span id="cb3-3"><a href></a><span class="im">import</span> bambi <span class="im">as</span> bmb</span>
@@ -1568,7 +1568,7 @@ B &amp; \sim MVN\left(\gamma, \Sigma \right) \\[2mm]
 </section>
 <section id="section-13" class="slide level2">
 <h2></h2>
-<div id="fd1dfad1" class="cell" data-execution_count="4">
+<div id="5a844b73" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href></a><span class="co"># Calls pm.sample().</span></span>
 <span id="cb5-2"><a href></a>bambi_fit_01 <span class="op">=</span> bambi_model_01.fit()</span>
 <span id="cb5-3"><a href></a>az.plot_trace(bambi_fit_01, compact <span class="op">=</span> <span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1584,7 +1584,7 @@ B &amp; \sim MVN\left(\gamma, \Sigma \right) \\[2mm]
 </section>
 <section id="section-14" class="slide level2">
 <h2></h2>
-<div id="b8311298" class="cell" data-execution_count="5">
+<div id="c653e38a" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href></a><span class="co"># Visualize marginal posteriors.</span></span>
 <span id="cb6-2"><a href></a>az.plot_forest(bambi_fit_01, var_names <span class="op">=</span> [<span class="st">&#39;avgfood&#39;</span>, <span class="st">&#39;groupsize&#39;</span>], combined <span class="op">=</span> <span class="va">True</span>, hdi_prob <span class="op">=</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -1599,7 +1599,7 @@ B &amp; \sim MVN\left(\gamma, \Sigma \right) \\[2mm]
 </section>
 <section id="section-15" class="slide level2">
 <h2></h2>
-<div id="e4e8ca4d" class="cell" data-execution_count="6">
+<div id="d1e1489c" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href></a><span class="co"># Use Bambi to estimate the direct causal effect of avgfood on weight by group.</span></span>
 <span id="cb7-2"><a href></a>bambi_model_02 <span class="op">=</span> bmb.Model(<span class="st">&#39;weight ~ (avgfood|group) + (groupsize|group)&#39;</span>, foxes.to_pandas(), noncentered <span class="op">=</span> <span class="va">True</span>)</span>
 <span id="cb7-3"><a href></a>bambi_model_02</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1625,7 +1625,7 @@ B &amp; \sim MVN\left(\gamma, \Sigma \right) \\[2mm]
 </section>
 <section id="section-16" class="slide level2 scrollable">
 <h2></h2>
-<div id="44d5ff13" class="cell" data-execution_count="7">
+<div id="0b6ff970" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href></a><span class="co"># Calls pm.sample().</span></span>
 <span id="cb9-2"><a href></a>bambi_fit_02 <span class="op">=</span> bambi_model_02.fit()</span>
 <span id="cb9-3"><a href></a>az.plot_trace(bambi_fit_02, compact <span class="op">=</span> <span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1641,7 +1641,7 @@ B &amp; \sim MVN\left(\gamma, \Sigma \right) \\[2mm]
 </section>
 <section id="section-17" class="slide level2">
 <h2></h2>
-<div id="5fd0ac94" class="cell" data-execution_count="8">
+<div id="88672931" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href></a><span class="co"># Visualize marginal posteriors.</span></span>
 <span id="cb10-2"><a href></a>az.plot_forest(bambi_fit_02, var_names <span class="op">=</span> [<span class="st">&#39;avgfood|group&#39;</span>, <span class="st">&#39;groupsize|group&#39;</span>], combined <span class="op">=</span> <span class="va">True</span>, hdi_prob <span class="op">=</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

@@ -1,7 +1,15 @@
 # My Project Report
 
 
-## Data Story
+## Milestone 1: Project Idea
+
+Lorem ipsum odor amet, consectetuer adipiscing elit. Sit eu class
+placerat erat nostra. Dictum sed nibh amet vel sollicitudin curabitur
+himenaeos ante. Gravida risus conubia per ultrices ligula nascetur. Nam
+fusce amet ad ante sed aenean! Quis lacus vulputate bibendum facilisi
+condimentum sit.
+
+## Milestone 2: Data Story
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Sit eu class
 placerat erat nostra. Dictum sed nibh amet vel sollicitudin curabitur
@@ -16,7 +24,7 @@ conubia porta sagittis sociosqu aenean? Nunc eget accumsan nunc lacus,
 urna lacus? Est quisque quis iaculis phasellus nisl. Purus nisi cursus
 convallis, tristique mauris sagittis nibh.
 
-## DAG
+## Milestone 3: DAG
 
 ``` mermaid
 flowchart LR
@@ -27,20 +35,20 @@ flowchart LR
   B --> Y{Y}
 ```
 
-## Identification Strategy
+## Milestone 4: Identification Strategy
 
-Here’s my adjustment set:
+Here’s my adjustment set following the backdoor criteria:
 
 - Lorem ipsum odor amet, consectetuer adipiscing elit.
 - Euismod a inceptos torquent laoreet dapibus quis quam laoreet.
 - Magnis lacinia ante aliquam posuere parturient lobortis.
 
-## Simulate Data and Recover Parameters
+## Milestone 5: Simulate Data and Recover Parameters
 
 ``` python
 import numpy as np
 import polars as pl
-import seaborn as sns
+import seaborn.objects as so
 from sklearn.linear_model import LinearRegression
 
 np.random.seed(42)
@@ -87,4 +95,78 @@ Lorem ipsum odor amet, consectetuer adipiscing elit. Sagittis interdum
 fringilla sagittis platea eget dictum sodales non. Nec arcu porta felis
 eros sem accumsan? Sit quis ridiculus, ligula dictum ex luctus.
 
-## Exploratory Data Analysis
+## Milestone 6: Exploratory Data Analysis
+
+Aliquam sociosqu habitant conubia porta sagittis sociosqu aenean? Nunc
+eget accumsan nunc lacus, urna lacus? Est quisque quis iaculis phasellus
+nisl. Purus nisi cursus convallis, tristique mauris sagittis nibh.
+
+``` python
+(so.Plot(sim_data, x = 'x', y = 'y')
+  .add(so.Dot(pointsize = 10, alpha = 0.5))
+)
+```
+
+<img src="../figures/sim-data-01.png" data-fig-align="center" />
+
+Mauris volutpat iaculis enim nam taciti est ipsum dui.
+
+## Milestone 7: Estimate Causal Effects
+
+``` python
+# eval: false
+import bambi as bmb
+import arviz as az
+
+# Import foxes data.
+foxes = pl.read_csv('../data/foxes.csv')
+
+# Use Bambi to estimate the direct causal effect of avgfood on weight.
+bambi_model_01 = bmb.Model('weight ~ avgfood + groupsize', foxes.to_pandas())
+bambi_model_01
+```
+
+           Formula: weight ~ avgfood + groupsize
+            Family: gaussian
+              Link: mu = identity
+      Observations: 116
+            Priors: 
+        target = mu
+            Common-level effects
+                Intercept ~ Normal(mu: -0.0, sigma: 2.4892)
+                avgfood ~ Normal(mu: 0.0, sigma: 2.5)
+                groupsize ~ Normal(mu: 0.0, sigma: 2.5)
+            
+            Auxiliary parameters
+                sigma ~ HalfStudentT(nu: 4.0, sigma: 0.9957)
+
+           Formula: weight ~ avgfood + groupsize
+            Family: gaussian
+              Link: mu = identity
+      Observations: 116
+            Priors: 
+        target = mu
+            Common-level effects
+                Intercept ~ Normal(mu: -0.0, sigma: 2.4892)
+                avgfood ~ Normal(mu: 0.0, sigma: 2.5)
+                groupsize ~ Normal(mu: 0.0, sigma: 2.5)
+            
+            Auxiliary parameters
+                sigma ~ HalfStudentT(nu: 4.0, sigma: 0.9957)
+
+``` python
+# Calls pm.sample().
+bambi_fit_01 = bambi_model_01.fit()
+az.plot_trace(bambi_fit_01, compact = False)
+```
+
+<img src="../figures/multilevel-models_plot-01.png"
+data-fig-align="center" />
+
+``` python
+# Visualize marginal posteriors.
+az.plot_forest(bambi_fit_01, var_names = ['avgfood', 'groupsize'], combined = True, hdi_prob = 0.95)
+```
+
+<img src="../figures/multilevel-models_plot-02.png"
+data-fig-align="center" />
