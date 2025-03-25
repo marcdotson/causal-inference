@@ -44,15 +44,24 @@ Python, Positron, Git and GitHub, and Quarto.
 
 ## *Probabilistic Machine Learning*
 
-We will be studying Kevin Murphy’s excellent *Probabilistic Machine
-Learning* series. Free PDFs of his books are available here:
+We will be studying Kevin Murphy’s *Probabilistic Machine Learning*
+series. Free PDFs of his books are available here:
 
 - [*Probabilistic Machine Learning: An
   Introduction*](https://probml.github.io/pml-book/book1.html)
 - [*Probabilistic Machine Learning: Advanced
   Topics*](https://probml.github.io/pml-book/book2.html)
 
-Other free materials will be provided as needed.
+## *The Mixtape* and *The Effect*
+
+We will also be studying Scott Cunningham’s *Causal Inference: The
+Mixtape* and Nick Huntington-Klein’s *The Effect: An Introduction to
+Research Design and Causality*. They are both available free online
+here:
+
+- [*Causal Inference: The Mixtape*](https://mixtape.scunning.com)
+- [*The Effect: An Introduction to Research Design and
+  Causality*](https://theeffectbook.net/index.html)
 
 ## Studying
 
@@ -184,7 +193,7 @@ as it effects any deadlines.
 - March 10: No Class (Spring Break)
 - March 12: No Class (Spring Break)
 
-#### Week 10: Differences in Differences
+#### Week 10: Differences-in-Differences
 
 - March 17: Diff-in-Diff Introduction (Holden)
 - March 19: Diff-in-Diff Coding (Holden)
@@ -193,19 +202,22 @@ as it effects any deadlines.
 #### Week 11: Synthetic Controls
 
 - March 24: Synthetic Controls (Holden)
-- March 26: Spring Cleaning and Milestone Audit
+- March 26: Spring Cleaning and Milestone Audit (Marc)
 - Milestone 11: Clean Up Project Report
 
-#### Week 12: TBD
+#### Week 12: Potential Outcomes and Matching
 
-- March 31: TBD
-- April 2: TBD
+- March 31: Potential Outcomes (Marc?)
+- April 2: Matching (Marc?)
+- *Causal Inference: The Mixtape* Chapters 4 and 5
+- *The Effect: An Introduction to Research Design and Causality* Chapter
+  14
 - Milestone 12: TBD
 
 #### Week 13: TBD
 
 - April 7: TBD
-- April 9: Marginal Effects
+- April 9: Marginal Effects (Andrew)
 - Milestone 13: TBD
 
 #### Week 14: Final Presentations
