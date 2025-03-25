@@ -175,8 +175,8 @@ as it effects any deadlines.
 
 #### Week 9: Experiments and Conjoint
 
-- March 3: Experimental Control
-- March 5: Surveys, Conjoint, and Multilevel Models
+- March 3: Experimental Control (Marc)
+- March 5: Surveys, Conjoint, and Multilevel Models (Marc)
 - Milestone 9: Run Conjoint Experiment
 
 #### Spring Break
@@ -186,13 +186,13 @@ as it effects any deadlines.
 
 #### Week 10: Differences in Differences
 
-- March 17: Diff-in-Diff Introduction
-- March 19: Diff-in-Diff Coding
+- March 17: Diff-in-Diff Introduction (Holden)
+- March 19: Diff-in-Diff Coding (Holden)
 - Milestone 10: Implement Diff-in-Diff Strategy
 
 #### Week 11: Synthetic Controls
 
-- March 24: Synthetic Controls
+- March 24: Synthetic Controls (Holden)
 - March 26: Spring Cleaning and Milestone Audit
 - Milestone 11: Clean Up Project Report
 
@@ -216,7 +216,7 @@ as it effects any deadlines.
 
 #### Week 15: Next Steps
 
-- April 21: What’s Next for Causal Inference?
+- April 21: What’s Next for Causal Inference? (Marc)
 - Milestone 15: Course Feedback
 
 ## HSB Differential Tuition
