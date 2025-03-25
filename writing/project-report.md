@@ -126,6 +126,10 @@ bambi_model_01 = bmb.Model('weight ~ avgfood + groupsize', foxes.to_pandas())
 bambi_model_01
 ```
 
+    /Users/a00714634/.pyenv/versions/3.12.4/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning:
+
+    IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+
            Formula: weight ~ avgfood + groupsize
             Family: gaussian
               Link: mu = identity
@@ -170,3 +174,21 @@ az.plot_forest(bambi_fit_01, var_names = ['avgfood', 'groupsize'], combined = Tr
 
 <img src="../figures/multilevel-models_plot-02.png"
 data-fig-align="center" />
+
+Controlling for group size, average food has a positive impact on fox
+weight.
+
+## Milestone 8: Intermediate Presentation
+
+See my intermediate presentation
+[slides](https://github.com/marcdotson/causal-inference/blob/main/presentations/multivariate-models.html).
+To summarize some feedback:
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  nisi ut aliquip ex ea commodo consequat.
+- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+  dolore eu fugiat nulla pariatur.
+- Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+  officia deserunt mollit anim id est laborum.
