@@ -114,7 +114,6 @@ Mauris volutpat iaculis enim nam taciti est ipsum dui.
 ## Milestone 7: Estimate Causal Effects
 
 ``` python
-# eval: false
 import bambi as bmb
 import arviz as az
 
@@ -125,24 +124,6 @@ foxes = pl.read_csv('../data/foxes.csv')
 bambi_model_01 = bmb.Model('weight ~ avgfood + groupsize', foxes.to_pandas())
 bambi_model_01
 ```
-
-    /Users/a00714634/.pyenv/versions/3.12.4/lib/python3.12/site-packages/tqdm/auto.py:21: TqdmWarning:
-
-    IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
-
-           Formula: weight ~ avgfood + groupsize
-            Family: gaussian
-              Link: mu = identity
-      Observations: 116
-            Priors: 
-        target = mu
-            Common-level effects
-                Intercept ~ Normal(mu: -0.0, sigma: 2.4892)
-                avgfood ~ Normal(mu: 0.0, sigma: 2.5)
-                groupsize ~ Normal(mu: 0.0, sigma: 2.5)
-            
-            Auxiliary parameters
-                sigma ~ HalfStudentT(nu: 4.0, sigma: 0.9957)
 
            Formula: weight ~ avgfood + groupsize
             Family: gaussian

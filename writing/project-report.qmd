@@ -97,7 +97,7 @@ Mauris volutpat iaculis enim nam taciti est ipsum dui.
 ## Milestone 7: Estimate Causal Effects
 
 ```{python}
-# eval: false
+#| eval: false
 import bambi as bmb
 import arviz as az
 
