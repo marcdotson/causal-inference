@@ -207,8 +207,8 @@ as it effects any deadlines.
 
 #### Week 12: Potential Outcomes and Matching
 
-- March 31: Potential Outcomes (Marc?)
-- April 2: Matching (Marc?)
+- March 31: Potential Outcomes (Alesandro)
+- April 2: Matching (Rebecca)
 - *Causal Inference: The Mixtape* Chapters 4 and 5
 - *The Effect: An Introduction to Research Design and Causality* Chapter
   14
