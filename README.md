@@ -202,7 +202,9 @@ as it effects any deadlines.
 #### Week 11: Synthetic Controls
 
 - March 24: Synthetic Controls (Holden)
-- March 26: Spring Cleaning and Milestone Audit (Marc)
+- March 26: [Spring Cleaning and Milestone
+  Audit](https://usu-edu.zoom.us/rec/share/X8kao53hW_Exoqm7E5Rsy3E-07tgX-3Ar4-X9XqDFBxoMAxAJDnBLKTa6cCzvf1o.nKjMiCYMHk0k7dsG?startTime=1743017588000)
+  (Marc)
 - Milestone 11: Clean Up Project Report
 
 #### Week 12: Potential Outcomes and Matching
