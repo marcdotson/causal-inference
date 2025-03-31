@@ -209,7 +209,9 @@ as it effects any deadlines.
 
 #### Week 12: Potential Outcomes and Matching
 
-- March 31: Potential Outcomes (Alesandro)
+- March 31: [Potential
+  Outcomes](https://usu-edu.zoom.us/rec/share/CEUUOPyiUeRo2TAEJSYaYqY8Mz26AANJB7XBufLh6i2FLQaMXVl645F4KVo1BFiM.S-D_h2lpsRFb2RtB?startTime=1743449747000)
+  (Alesandro)
 - April 2: Matching (Rebecca)
 - *Causal Inference: The Mixtape* Chapters 4 and 5
 - *The Effect: An Introduction to Research Design and Causality* Chapter
