@@ -212,7 +212,9 @@ as it effects any deadlines.
 - March 31: [Potential
   Outcomes](https://usu-edu.zoom.us/rec/share/CEUUOPyiUeRo2TAEJSYaYqY8Mz26AANJB7XBufLh6i2FLQaMXVl645F4KVo1BFiM.S-D_h2lpsRFb2RtB?startTime=1743449747000)
   (Alesandro)
-- April 2: Matching (Rebecca)
+- April 2:
+  [Matching](https://usu-edu.zoom.us/rec/share/hSqasL8sBF5eDmkp4X3u_nd7n_CwXE2Wijb4t4ScoUXFsGiVNIkGJd34tCi2z2Ml.EYo9WIDldnP9bUel?startTime=1743622262000)
+  (Rebecca)
 - *Causal Inference: The Mixtape* Chapters 4 and 5
 - *The Effect: An Introduction to Research Design and Causality* Chapter
   14
