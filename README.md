@@ -216,13 +216,18 @@ as it effects any deadlines.
 - *Causal Inference: The Mixtape* Chapters 4 and 5
 - *The Effect: An Introduction to Research Design and Causality* Chapter
   14
-- Milestone 12: TBD
+- Milestone 12: Implement Matching Strategy
 
-#### Week 13: TBD
+#### Week 13: Regression Discontinuity and Marginal Effects
 
-- April 7: TBD
+- April 7: Regression Discontinuity (Gabby)
 - April 9: Marginal Effects (Andrew)
-- Milestone 13: TBD
+- *Causal Inference: The Mixtape* Chapter 6
+- *The Effect: An Introduction to Research Design and Causality* Chapter
+  13
+- [How to Interpret Statistical Models Using marginaleffects for R and
+  Python](https://www.jstatsoft.org/article/view/v111i09)
+- Milestone 13: Implement Regression Discontinuity or Marginal Effects
 
 #### Week 14: Final Presentations
 
