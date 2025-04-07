@@ -222,8 +222,10 @@ as it effects any deadlines.
 
 #### Week 13: Regression Discontinuity and Marginal Effects
 
-- April 7: Regression Discontinuity (Gabby)
-- April 9: Marginal Effects (Andrew)
+- April 7: [Regression
+  Discontinuity](https://usu-edu.zoom.us/rec/share/FIjebUmUVz8xTHcPd9NKDKv6V7_b2kaDArcfebVg1VJ1x_SfGcQg_Ouuc_MAhAO6.Re1YnHWJo0KNoiM7?startTime=1744054311000)
+  (Gabby)
+- April 9: Data Science for Public Service (Andrew)
 - *Causal Inference: The Mixtape* Chapter 6
 - *The Effect: An Introduction to Research Design and Causality* Chapter
   13
