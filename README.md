@@ -225,7 +225,9 @@ as it effects any deadlines.
 - April 7: [Regression
   Discontinuity](https://usu-edu.zoom.us/rec/share/FIjebUmUVz8xTHcPd9NKDKv6V7_b2kaDArcfebVg1VJ1x_SfGcQg_Ouuc_MAhAO6.Re1YnHWJo0KNoiM7?startTime=1744054311000)
   (Gabby)
-- April 9: Data Science for Public Service (Andrew)
+- April 9: [Data Science for Public
+  Service](https://usu-edu.zoom.us/rec/share/aMvPYB1RkWMFhuSBi7ygyKxqdsiBBbKbFL1ESPIwaCcRfLd-QKc8RsQBDrs3sPqB.z6lAvMHdUew9J0SS?startTime=1744227148000)
+  (Andrew)
 - *Causal Inference: The Mixtape* Chapter 6
 - *The Effect: An Introduction to Research Design and Causality* Chapter
   13
@@ -235,14 +237,14 @@ as it effects any deadlines.
 
 #### Week 14: Final Presentations
 
-- April 14: Final Presentations
+- April 14: What’s Next for Causal Inference? (Marc)
 - April 16: Final Presentations
 - Milestone 14: Final Presentations
 
-#### Week 15: Next Steps
+#### Week 15: Final Presentations
 
-- April 21: What’s Next for Causal Inference? (Marc)
-- Milestone 15: Course Feedback
+- April 21: Final Presentations
+- Milestone 15: Finalize Project Reports
 
 ## HSB Differential Tuition
 
