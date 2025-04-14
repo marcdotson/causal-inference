@@ -237,7 +237,9 @@ as it effects any deadlines.
 
 #### Week 14: Final Presentations
 
-- April 14: What’s Next for Causal Inference? (Marc)
+- April 14: [What’s Next for Causal
+  Inference?](https://usu-edu.zoom.us/rec/share/wrJDsgVj1ZC7ceFdMucYl5H-BsOufejlSGdiQ04c44ZZ3QeFWIBsueyHCw-aUg3T.QSDf97qCev7SMYMZ?startTime=1744658958000)
+  (Marc)
 - April 16: Final Presentations
 - Milestone 14: Final Presentations
 
